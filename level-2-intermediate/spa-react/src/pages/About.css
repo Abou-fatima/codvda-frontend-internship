@@ -118,7 +118,44 @@
 }
 
 /* Responsive */
+@media (max-width: 1024px) {
+  .values-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  .stats-grid {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+}
+
 @media (max-width: 768px) {
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .stats-about {
+    padding: 2rem 0.5rem;
+  }
+  .stats-grid {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 0.5rem;
+  }
+  .stat h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .value-card h3 {
+    font-size: 1.1rem;
+  }
+  .value-card p, .stat p {
+    font-size: 0.95rem;
+  }
+}
   .about-hero h1 {
     font-size: 2rem;
   }
