@@ -1,0 +1,236 @@
+.home-page {
+  width: 100%;
+}
+
+/* Section Héro */
+.hero-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 6rem 2rem;
+  text-align: center;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.subheadline {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.95;
+}
+
+.description {
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.cta-button {
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  background: white;
+  color: #667eea;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #f8f9fa;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+/* Section Statistiques */
+.stats-section {
+  padding: 4rem 2rem;
+  background: white;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  text-align: center;
+  flex: 1;
+  min-width: 200px;
+}
+
+.stat-item h2 {
+  font-size: 3rem;
+  color: #667eea;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.stat-item p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Section Mission */
+.about-mission {
+  padding: 4rem 2rem;
+  background: #f8f9fa;
+  text-align: center;
+}
+
+.about-mission h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.about-mission p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* Section Services */
+.services-section {
+  padding: 4rem 2rem;
+  background: white;
+}
+
+.services-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #667eea;
+  margin-bottom: 3rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card h3 {
+  color: #667eea;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.service-card p {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Section Témoignages */
+.testimonials-section {
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.testimonials-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 3rem;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.quote {
+  font-style: italic;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.author {
+  text-align: right;
+}
+
+.author strong {
+  display: block;
+  color: #333;
+  margin-bottom: 0.25rem;
+}
+
+.author span {
+  color: #667eea;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .subheadline {
+    font-size: 1.2rem;
+  }
+  
+  .description {
+    font-size: 1rem;
+  }
+  
+  .stats-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .stat-item h2 {
+    font-size: 2.5rem;
+  }
+}

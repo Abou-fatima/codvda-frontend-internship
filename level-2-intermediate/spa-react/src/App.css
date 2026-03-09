@@ -1,0 +1,72 @@
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #667eea;
+  color: white;
+  transition: background 0.3s;
+}
+
+.navbar.dark {
+  background: #333;
+}
+
+.logo {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.nav-links a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.nav-links a.active {
+  background: rgba(255, 255, 255, 0.3);
+  border-bottom: 2px solid white;
+}
+
+.theme-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+}
+
+/* Main content */
+.container {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Pour le changement de thème, on peut aussi changer la couleur de fond du body */
+body.light {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+body.dark {
+  background-color: #222;
+  color: #f9f9f9;
+}

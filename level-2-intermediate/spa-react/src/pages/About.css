@@ -1,0 +1,132 @@
+.about-page {
+  width: 100%;
+}
+
+.about-hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-hero .lead {
+  font-size: 1.3rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+.mission-section {
+  padding: 4rem 2rem;
+  background: #f8f9fa;
+  text-align: center;
+}
+
+.mission-section h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.mission-section p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+.values-section {
+  padding: 4rem 2rem;
+  background: white;
+}
+
+.values-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 3rem;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.value-card {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+}
+
+.value-card h3 {
+  color: #667eea;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.value-card p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.stats-about {
+  padding: 4rem 2rem;
+  background: #f0f4f8;
+}
+
+.stats-grid {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.stat {
+  text-align: center;
+  flex: 1;
+  min-width: 150px;
+}
+
+.stat h3 {
+  font-size: 2.5rem;
+  color: #667eea;
+  margin-bottom: 0.5rem;
+}
+
+.stat p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-hero h1 {
+    font-size: 2rem;
+  }
+  .about-hero .lead {
+    font-size: 1.1rem;
+  }
+  .mission-section h2,
+  .values-section h2 {
+    font-size: 2rem;
+  }
+}
