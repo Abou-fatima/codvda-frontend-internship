@@ -1,3 +1,4 @@
+/* About Page Styles */
 .about-page {
   width: 100%;
 }
@@ -117,7 +118,7 @@
   color: #555;
 }
 
-/* Responsive */
+/* Responsive Styles */
 @media (max-width: 1024px) {
   .values-grid {
     grid-template-columns: 1fr 1fr;
@@ -156,14 +157,17 @@
     font-size: 0.95rem;
   }
 }
-  .about-hero h1 {
-    font-size: 2rem;
-  }
-  .about-hero .lead {
-    font-size: 1.1rem;
-  }
-  .mission-section h2,
-  .values-section h2 {
-    font-size: 2rem;
-  }
+
+/* Blocs indépendants pour petits ajustements */
+.about-hero h1 {
+  font-size: 2rem;
+}
+
+.about-hero .lead {
+  font-size: 1.1rem;
+}
+
+.mission-section h2,
+.values-section h2 {
+  font-size: 2rem;
 }
