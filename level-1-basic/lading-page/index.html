@@ -9,14 +9,16 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="logo">Codveda</div>
+            <div class="logo">Alpha Tech</div>
             <ul class="nav-links">
-                <li><a href="#home">Accueil</a></li>
-                <li><a href="#features">Fonctionnalités</a></li>
-                <li><a href="#about">À propos</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#portfolio">Work</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#testimonials">Stories</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="burger">
+            <div class="burger" id="burger">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
@@ -25,50 +27,229 @@
     </header>
 
     <main>
+        <!-- HERO -->
         <section id="home" class="hero">
             <div class="hero-content">
-                <h1>Bienvenue chez Codveda</h1>
-                <p>Des solutions innovantes pour votre entreprise</p>
-                <a href="#features" class="cta-btn">Découvrir</a>
+                <h1>Where code meets vision</h1>
+                <p>We craft digital experiences that elevate brands — fast, secure, and human.</p>
+                <a href="#features" class="cta-btn">Explore Alpha Tech</a>
             </div>
         </section>
 
+        <!-- FEATURES -->
         <section id="features" class="features">
-            <h2>Nos fonctionnalités</h2>
+            <h2>Why top companies choose us</h2>
             <div class="features-grid">
                 <div class="feature-card">
-                    <div class="feature-icon">🚀</div>
-                    <h3>Performance</h3>
-                    <p>Optimisation et rapidité pour vos projets.</p>
+                    <div class="feature-icon">⚡</div>
+                    <h3>Blazing performance</h3>
+                    <p>Optimized code and edge delivery — your product flies.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">📱</div>
-                    <h3>Responsive</h3>
-                    <p>S'adapte à tous les écrans.</p>
+                    <h3>Mobile-first</h3>
+                    <p>Flawless experiences on every device, from watch to 4K.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🔒</div>
-                    <h3>Sécurité</h3>
-                    <p>Protection des données avancée.</p>
+                    <h3>Enterprise security</h3>
+                    <p>Data encrypted, privacy by design, GDPR compliant.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>AI-ready</h3>
+                    <p>Integrate smart features without friction.</p>
                 </div>
             </div>
         </section>
 
+        <!-- ABOUT (condensed but warm) -->
         <section id="about" class="about">
-            <h2>À propos</h2>
-            <p>Codveda Technology, où l'innovation rencontre l'excellence. Nous offrons des services de développement web, mobile, marketing digital et bien plus.</p>
+            <h2>About Alpha Tech</h2>
+            <p>We’re a team of builders, designers, and strategists. For 5+ years we’ve helped startups and enterprises ship products that users love. Innovation isn’t just a buzzword — it’s our daily bread.</p>
         </section>
 
+        <!-- PORTFOLIO (new) -->
+        <section id="portfolio" class="portfolio">
+            <h2>Recent work</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-img">📊</div>
+                    <h3>Fintech dash</h3>
+                    <p>Real-time analytics for a European bank</p>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-img">🛒</div>
+                    <h3>Marketplace X</h3>
+                    <p>Scalable e‑commerce with 200k+ products</p>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-img">📱</div>
+                    <h3>Health+ app</h3>
+                    <p>Wellness platform used by 1M+ users</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TEAM (new) -->
+        <section id="team" class="team">
+            <h2>Meet the minds</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Chen">
+                    <h3>Sarah Chen</h3>
+                    <p>CTO & co-founder</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Marcus V.">
+                    <h3>Marcus V.</h3>
+                    <p>Lead engineer</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Aisha Diallo">
+                    <h3>Aisha Diallo</h3>
+                    <p>Product designer</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-behance"></i></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="James O.">
+                    <h3>James O.</h3>
+                    <p>DevOps & security</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS (new) -->
+        <section id="testimonials" class="testimonials">
+            <h2>Trusted by innovators</h2>
+            <div class="testimonial-card">
+                <i class="fas fa-quote-right"></i>
+                <p>"Alpha Tech didn’t just deliver code — they became our strategic partner. The platform they built scaled to 2M users in months."</p>
+                <h4>Elena R.</h4>
+                <span>CEO, Lumio Health</span>
+            </div>
+            <div class="testimonial-card">
+                <i class="fas fa-quote-right"></i>
+                <p>"Their design sensitivity and technical depth are rare. We redesigned our entire dashboard in 6 weeks, and customers loved it."</p>
+                <h4>Carlos M.</h4>
+                <span>Product lead, Finwise</span>
+            </div>
+        </section>
+
+        <!-- CONTACT (enhanced with form) -->
         <section id="contact" class="contact">
-            <h2>Contactez-nous</h2>
-            <p>Email: contact@codveda.com</p>
+            <h2>Let’s build something great</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> contact@alphatech.com</p>
+                    <p><i class="fas fa-phone-alt"></i> +1 (555) 742‑0137</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 221B Innovation Street, Austin, TX</p>
+                    <p>🌍 remote · worldwide</p>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Your name" required>
+                    <input type="email" placeholder="Email address" required>
+                    <textarea rows="4" placeholder="Tell us about your project..." required></textarea>
+                    <button type="submit">Send message <i class="fas fa-paper-plane"></i></button>
+                    <p style="font-size:0.85rem; color:#4b5563; margin-top:0;">(demo — no data stored)</p>
+                </form>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Codveda Technology. Tous droits réservés.</p>
+        <p>© 2025 Alpha Tech Technology — where innovation meets excellence. All rights reserved.</p>
+        <div style="margin-top: 1rem;">
+            <a href="#" style="color:#94a3b8; margin:0 10px;"><i class="fab fa-twitter"></i></a>
+            <a href="#" style="color:#94a3b8; margin:0 10px;"><i class="fab fa-linkedin"></i></a>
+            <a href="#" style="color:#94a3b8; margin:0 10px;"><i class="fab fa-github"></i></a>
+        </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- back to top button -->
+    <button id="backToTop" title="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+    <script>
+        // ========== MOBILE BURGER MENU ==========
+        const burger = document.getElementById('burger');
+        const navLinks = document.querySelector('.nav-links');
+
+        burger.addEventListener('click', () => {
+            navLinks.classList.toggle('nav-active');
+            // burger animation (optional)
+            burger.classList.toggle('toggle');
+        });
+
+        // close menu when link clicked (optional)
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('nav-active');
+            });
+        });
+
+        // ========== SMOOTH SCROLL (already via CSS, but we keep for any hash) ==========
+        // optional: prevent default for very old browsers, but css does it.
+
+        // ========== BACK TO TOP BUTTON ==========
+        const backBtn = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 400) {
+                backBtn.classList.add('show');
+            } else {
+                backBtn.classList.remove('show');
+            }
+        });
+
+        backBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // ========== CONTACT FORM ALERT (demo) ==========
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                alert('📬 Thanks for reaching out! (demo) We’ll get back to you within 24h.');
+                contactForm.reset();
+            });
+        }
+
+        // ========== SIMPLE SCROLL REVEAL (optional subtle fade) ==========
+        const sections = document.querySelectorAll('section');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.15 });
+
+        sections.forEach(section => {
+            section.style.opacity = 0;
+            section.style.transform = 'translateY(20px)';
+            section.style.transition = 'opacity 0.7s ease, transform 0.5s ease';
+            observer.observe(section);
+        });
+
+        // make hero immediately visible (optional)
+        document.getElementById('home').style.opacity = 1;
+        document.getElementById('home').style.transform = 'translateY(0)';
+    </script>
 </body>
 </html>

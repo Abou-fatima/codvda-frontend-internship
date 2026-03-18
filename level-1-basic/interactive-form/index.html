@@ -8,10 +8,10 @@
 </head>
 <body>
     <div class="container">
-        <h1>Inscription</h1>
+        <h1>Sign-up</h1>
         <form id="signupForm" novalidate>
             <div class="form-group">
-                <label for="name">Nom complet</label>
+                <label for="name">Full name</label>
                 <input type="text" id="name" name="name" placeholder="Jean Dupont" required>
                 <small class="error-message" id="nameError"></small>
             </div>
@@ -21,52 +21,50 @@
                 <small class="error-message" id="emailError"></small>
             </div>
             <div class="form-group">
-                <label for="phone">Téléphone</label>
+                <label for="phone">phone</label>
                 <div style="display: flex; gap: 8px;">
                     <select id="countryCode" name="countryCode" style="width: 110px;">
-                        <option value="33">🇫🇷 +33</option>
-                        <option value="32">🇧🇪 +32</option>
-                        <option value="41">🇨🇭 +41</option>
-                        <option value="49">🇩🇪 +49</option>
-                        <option value="44">🇬🇧 +44</option>
-                        <option value="1">🇺🇸 +1</option>
-                        <option value="212">🇲🇦 +212</option>
-                        <option value="213">🇩🇿 +213</option>
-                        <option value="216">🇹🇳 +216</option>
-                        <option value="221">🇸🇳 +221</option>
-                        <option value="225">🇨🇮 +225</option>
-                        <option value="226">🇧🇫 +226</option>
-                        <option value="228">🇹🇬 +228</option>
-                        <option value="229">🇧🇯 +229</option>
-                        <option value="237">🇨🇲 +237</option>
-                        <option value="241">🇬🇦 +241</option>
-                        <option value="242">🇨🇬 +242</option>
-                        <option value="243">🇨🇩 +243</option>
-                        <option value="225">🇨🇮 +225</option>
-                        <option value="226">🇧🇫 +226</option>
-                        <option value="227">🇳🇪 +227</option>
-                        <option value="228">🇹🇬 +228</option>
-                        <option value="229">🇧🇯 +229</option>
+                        <option value="33">FR +33</option>
+                        <option value="32">BE +32</option>
+                        <option value="41">CH +41</option>
+                        <option value="49">DE +49</option>
+                        <option value="44">GB +44</option>
+                        <option value="1">US +1</option>
+                        <option value="212">MA +212</option>
+                        <option value="213">DZ +213</option>
+                        <option value="216">TN +216</option>
+                        <option value="221">SN +221</option>
+                        <option value="225">CI +225</option>
+                        <option value="226">BF +226</option>
+                        <option value="228">TG +228</option>
+                        <option value="229">BJ +229</option>
+                        <option value="237">CM +237</option>
+                        <option value="241">GA +241</option>
+                        <option value="242">CG +242</option>
+                        <option value="243">CD +243</option>
+                        <option value="225">CI +225</option>
+                        <option value="226">BF +226</option>
+                        <option value="227">NE +227</option>
                         <option value="230">🇲🇺 +230</option>
-                        <option value="231">🇱🇷 +231</option>
-                        <option value="232">🇸🇱 +232</option>
-                        <option value="233">🇬🇭 +233</option>
-                        <option value="234">🇳🇬 +234</option>
-                        <option value="235">🇹🇩 +235</option>
-                        <option value="236">🇨🇫 +236</option>
-                        <option value="237">🇨🇲 +237</option>
-                        <option value="238">🇨🇻 +238</option>
-                        <option value="239">🇸🇹 +239</option>
-                        <option value="240">🇬🇶 +240</option>
-                        <option value="241">🇬🇦 +241</option>
-                        <option value="242">🇨🇬 +242</option>
-                        <option value="243">🇨🇩 +243</option>
-                        <option value="244">🇦🇴 +244</option>
-                        <option value="245">🇬🇼 +245</option>
-                        <option value="246">🇮🇴 +246</option>
-                        <option value="247">🇦🇨 +247</option>
-                        <option value="248">🇸🇨 +248</option>
-                        <option value="249">🇸🇩 +249</option>
+                        <option value="231">LR +231</option>
+                        <option value="232">SL +232</option>
+                        <option value="233">GH +233</option>
+                        <option value="234">NG +234</option>
+                        <option value="235">TD +235</option>
+                        <option value="236">CF +236</option>
+                        <option value="237">CM +237</option>
+                        <option value="238">CV +238</option>
+                        <option value="239">ST +239</option>
+                        <option value="240">GQ +240</option>
+                        <option value="241">GA +241</option>
+                        <option value="242">CG +242</option>
+                        <option value="243">CD +243</option>
+                        <option value="244">AO +244</option>
+                        <option value="245">GW +245</option>
+                        <option value="246">IO +246</option>
+                        <option value="247">AC +247</option>
+                        <option value="248">SC +248</option>
+                        <option value="249">SD +249</option>
                         <option value="250">🇷🇼 +250</option>
                         <option value="251">🇪🇹 +251</option>
                         <option value="252">🇸🇴 +252</option>
@@ -131,18 +129,18 @@
                 <small class="error-message" id="phoneError"></small>
             </div>
             <div class="form-group">
-                <label for="password">Mot de passe</label>
+                <label for="password">password</label>
                 <input type="password" id="password" name="password" placeholder="••••••••" required>
                 <small class="error-message" id="passwordError"></small>
             </div>
             <div class="form-group">
-                <label for="confirmPassword">Confirmer le mot de passe</label>
+                <label for="confirmPassword">confirm password</label>
                 <input type="password" id="confirmPassword" name="confirmPassword" placeholder="••••••••" required>
                 <small class="error-message" id="confirmPasswordError"></small>
             </div>
-            <button type="submit" id="submitBtn">S'inscrire</button>
+            <button type="submit" id="submitBtn">Sign-up</button>
         </form>
-        <div id="successMessage" class="success-message" style="display: none;">Inscription réussie !</div>
+        <div id="successMessage" class="success-message" style="display: none;">Acount created successfuly !</div>
     </div>
     <script src="script.js"></script>
 </body>
